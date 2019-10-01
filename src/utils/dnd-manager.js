@@ -241,11 +241,14 @@ export default class DndManager {
           return;
         }
 
-        this.dragHover({
-          node: draggedNode,
-          path: monitor.getItem().path,
-          minimumTreeIndex: dropTargetProps.listIndex,
-          depth: targetDepth,
+        cancelAnimationFrame(this.rafId);
+        this.rafId = requestAnimationFrame(() => {
+          this.dragHover({
+            node: draggedNode,
+            path: monitor.getItem().path,
+            minimumTreeIndex: dropTargetProps.listIndex,
+            depth: targetDepth,
+          });
         });
       },
 
