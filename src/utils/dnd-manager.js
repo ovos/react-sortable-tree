@@ -5,7 +5,6 @@ import {
 } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import { findDOMNode } from 'react-dom';
-import throttle from 'lodash.throttle';
 import { getDepth } from './tree-data-utils';
 import { memoizedInsertNode } from './memoized-tree-data-utils';
 
