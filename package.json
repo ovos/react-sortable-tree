@@ -1,6 +1,6 @@
 {
   "name": "@ovos-media/react-sortable-tree",
-  "version": "2.6.3",
+  "version": "2.6.4",
   "description": "Drag-and-drop sortable component for nested data and hierarchies",
   "scripts": {
     "start": "parcel website/index.html",
@@ -62,6 +62,7 @@
   "dependencies": {
     "frontend-collective-react-dnd-scrollzone": "^1.0.2",
     "lodash.isequal": "^4.5.0",
+    "lodash.throttle": "^4.1.1",
     "prop-types": "^15.6.1",
     "react-dnd": "^7.3.0",
     "react-dnd-html5-backend": "^7.0.1",
